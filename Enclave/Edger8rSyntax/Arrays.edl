@@ -1,0 +1,26 @@
+/*
+ * Aisha Hasan
+ *
+ * Sub-level EDL file for Arrays
+ *
+ */
+
+
+enclave {
+
+	trusted {
+
+		/*
+         * []:  can be used to declare an array.
+         * [user_check]:
+         *      pointer of the array won't be valified, and the buffer pointed by 'arr' 
+         *      is not copied into the enclave either. But enclave can modify the memory outside.
+         */
+        
+        public void ecall_array_user_check([user_check] int arr[4]);
+	};
+
+	untrusted {
+		//
+	};
+};
