@@ -6,7 +6,7 @@ Purpose of SGXTutorial
 An attempt to understand and replicate Intel's "SGX Tutorial for Windows", on Linux.
 
 - The tutorial uses C++/CLI (C++ modified for Common Language Infrastructure),
-so the code is not directly portable for use on my machine (Linux: Ubuntu) 
+so the tutorial code is not directly portable for use on my machine (Linux: Ubuntu) 
 - Some things that are not compatible right off the bat are "managed types" - i.e.
 objects created using "gcnew".
 Maybe I could use something like Mono (an open source implementation of 
@@ -17,6 +17,11 @@ http://stackoverflow.com/questions/1969085/what-is-the-difference-between-ansi-i
  
 I'd like to try without Mono first though, since SGX for Linux may have
 compatibility issues with Mono
+
+
+- Assume: SGX enabled machine, 64-bit
+- My code has very little error checking. It was meant as a quick thing to 
+help me figure out the interface between the enclave & application 
 
 ------------------------------------
 How to Build/Execute the Sample Code

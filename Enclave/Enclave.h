@@ -11,11 +11,15 @@
 #include <stdlib.h>
 #include <assert.h>
 
+#include "sgx_trts.h"
+#include "../App/PasswordManagerError.h"
+#include "E_Vault.h"
+
 #if defined(__cplusplus)
 extern "C" {
 #endif
 
-void printf(const char *fmt, ...);
+int initialise();
 
 #if defined(__cplusplus)
 }
